@@ -55,7 +55,7 @@ def save_to_history(question, answer):
     })
 
 with st.container():
-    st.markdown('<div class="gradient-header"><h1>AI Learning Buddy</h1></div>', unsafe_allow_html=True)
+    st.markdown('<div class="gradient-header"><h1>AI Driven Study Partner</h1></div>', unsafe_allow_html=True)
 
     with st.sidebar:
         st.header("Settings")
