@@ -1,0 +1,20 @@
+# Ignore Python virtual environment
+myenv/
+
+# Ignore .env file that contains your API keys
+.env
+
+# Ignore Streamlit's config or logs if present
+*.pyc
+__pycache__/
+.streamlit/
+
+# Ignore Jupyter notebook checkpoints (if you use notebooks)
+.ipynb_checkpoints/
+
+# Ignore VS Code workspace settings (if you use VS Code)
+.vscode/
+
+# Ignore OS or IDE generated files
+.DS_Store
+Thumbs.db
