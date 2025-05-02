@@ -95,26 +95,24 @@ with tab2:
     if st.button("Generate Quiz", key="quiz_button", use_container_width=True):
         if quiz_topic:
             with st.spinner("Creating your quiz..."):
-                quiz_prompt = f"""Create a 3-question quiz about "{quiz_topic}" suitable for {difficulty} level.
-Use this exact format:
+                quiz_prompt = f"""Create a 10-question quiz about "{quiz_topic}" suitable for {difficulty} level.
+Use this exact format for each question:
 Q1: Question text
 A. Option A
 B. Option B
 C. Option C
 D. Option D
 Answer: A
-Ensure each question and option is on its own line exactly as above."""
+Ensure each question and option is on its own line exactly as above. Do not include explanations."""
                 
                 quiz_text = get_response(quiz_prompt, difficulty)
 
-                # 🔍 Show raw quiz text to debug formatting
-                st.text("Raw quiz text:\n" + quiz_text)
-
+                # ✅ Raw text is no longer displayed to the user
                 if quiz_text:
                     st.session_state.quiz_data = []
                     st.session_state.quiz_answers = {}
 
-                    # 🛠️ Loosened regex to match flexible formats
+                    # Regex updated to extract multiple questions
                     questions = re.findall(
                         r"Q\d*[:\-]?\s*(.*?)\s*A[.)]\s*(.*?)\s*B[.)]\s*(.*?)\s*C[.)]\s*(.*?)\s*D[.)]\s*(.*?)\s*Answer[:\-]?\s*([A-D])",
                         quiz_text, re.DOTALL
@@ -170,7 +168,6 @@ Ensure each question and option is on its own line exactly as above."""
                         "score": f"{score}/{total}",
                         "results": result_summary
                     })
-
 # Summarize Tab
 with tab3:
     st.header("Summarize Text or Notes")
