@@ -3,6 +3,9 @@
 An interactive, AI-powered educational web app built with Streamlit and Gemini API (Gemini 2.0 Flash). It helps students learn, test knowledge with quizzes, summarize content, and review their learning history — all in one place.
 
 ---
+## Live Project 
+Click on the below link to see the project:
+https://ai-driven-study-partner-jo9bks3g2g38cwnedrgvek.streamlit.app/ 
 
 ## 🚀 Features
 
