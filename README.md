@@ -44,7 +44,7 @@ Install dependencies using pip:
 ```bash
 pip install streamlit python-dotenv google-generativeai
 
-🔐 Setup Instructions
+## 🔐 Setup Instructions
 1.Clone this repository:
 git clone https://github.com/your-username/ai-driven-study-partner.git
 cd ai-driven-study-partner
@@ -57,7 +57,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 3.Run the Streamlit app:
 streamlit run app.py
 
-📁 Folder Structure
+## 📁 Folder Structure
 bash
 Copy
 Edit
@@ -67,16 +67,16 @@ ai-driven-study-partner/
 ├── README.md
 └── requirements.txt
 
-🧠 Tips
+## 🧠 Tips
 Use "Beginner" mode if you're just starting with a topic.
 
 Summaries are helpful for quick reviews before exams.
 
 Your session history is saved temporarily—don't forget to copy notes before you leave.
 
-📜 License
+## 📜 License
 MIT License © 2025 Digvijay Patil
 
-🙋‍♂️ Maintained By
+## 🙋‍♂️ Maintained By
 Digvijay – Engineering Student and AI Enthusiast
 
